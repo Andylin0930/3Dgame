@@ -16,7 +16,7 @@ public class SpwanManger : MonoBehaviour
         animalIndex = Random.Range(0, animalPerfabs.Length);
         if (Input.GetKeyDown(KeyCode.S))
         {
-            Instantiate(animalPerfabs[animalIndex], new Vector3(0, 0, 20), animalPerfabs[animalIndex].transform.rotation);
+            Instantiate(animalPerfabs[animalIndex], new Vector3(Random.Range(-17, 17), 0, 20), animalPerfabs[animalIndex].transform.rotation);
         }
     }
 }
