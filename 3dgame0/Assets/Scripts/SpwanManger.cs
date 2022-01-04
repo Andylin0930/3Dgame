@@ -13,6 +13,7 @@ public class SpwanManger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        animalIndex = Random.Range(0, animalPerfabs.Length);
         if (Input.GetKeyDown(KeyCode.S))
         {
             Instantiate(animalPerfabs[animalIndex], new Vector3(0, 0, 20), animalPerfabs[animalIndex].transform.rotation);
