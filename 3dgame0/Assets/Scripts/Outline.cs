@@ -15,5 +15,9 @@ public class Outline : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        else if(transform.position.z < -6)
+        {
+            Destroy(gameObject);
+        }
     }
 }
